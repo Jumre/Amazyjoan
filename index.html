@@ -269,6 +269,52 @@ input, button {
   }
 }
 
+
+<!-- Refined styles for responsive carousel -->
+<style>
+.carousel-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: auto; /* Auto adjust height based on width */
+  object-fit: cover; /* Maintain image aspect ratio */
+}
+
+/* Adjust carousel height based on screen width */
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 250px; /* Shorter carousel for small screens */
+  }
+  .carousel-item img {
+    max-height: 250px; /* Constrain image height */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .carousel-item {
+    height: 400px; /* Medium height for tablets and small desktops */
+  }
+  .carousel-item img {
+    max-height: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .carousel-item {
+    height: 500px; /* Taller carousel for larger desktops */
+  }
+  .carousel-item img {
+    max-height: 500px;
+  }
+}
+
+/* Optional: For smoother transitions */
+.carousel-inner {
+  transition: transform 0.6s ease;
+}
 </style>
 
 </head>
@@ -327,25 +373,25 @@ input, button {
   <!-- Carousel Section -->
 <section class="carousel-section">
   <div class="container">
-    <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="https://github.com/Jumre/Amazyjoan/blob/main/cerosel1.png?raw=true" class="d-block w-100" alt="Project 1">
+          <img src="https://github.com/Jumre/Amazyjoan/blob/main/1.png?raw=true" class="d-block w-100" alt="Project 1">
         </div>
         <div class="carousel-item">
-          <img src="https://github.com/Jumre/Amazyjoan/blob/main/cerosel1.png?raw=true" class="d-block w-100" alt="Project 2">
+          <img src="https://github.com/Jumre/Amazyjoan/blob/main/2.png?raw=true" class="d-block w-100" alt="Project 2">
         </div>
         <div class="carousel-item">
           <img src="https://github.com/Jumre/Amazyjoan/blob/main/cerosel1.png?raw=true" class="d-block w-100" alt="Project 3">
         </div>
         <div class="carousel-item">
-          <img src="https://github.com/Jumre/Amazyjoan/blob/main/cerosel1.png?raw=true" class="d-block w-100" alt="Project 4">
+          <img src="https://github.com/Jumre/Amazyjoan/blob/main/3.png?raw=true" class="d-block w-100" alt="Project 4">
         </div>
         <div class="carousel-item">
-          <img src="https://github.com/Jumre/Amazyjoan/blob/main/cerosel1.png?raw=true" class="d-block w-100" alt="Project 5">
+          <img src="https://github.com/Jumre/Amazyjoan/blob/main/4.png?raw=true" class="d-block w-100" alt="Project 5">
         </div>
         <div class="carousel-item">
-          <img src="C:\Users\Administrator\OneDrive - COMPUTECH LIMITED\Pictures\Screenshots\Screenshot 2024-09-07 210009.png" class="d-block w-100" alt="Project 6">
+          <img src="https://github.com/Jumre/Amazyjoan/blob/main/5.png?raw=true" class="d-block w-100" alt="Project 6">
         </div>
       </div>
       <!-- Carousel controls -->
@@ -360,6 +406,7 @@ input, button {
     </div>
   </div>
 </section>
+
 
 
 
